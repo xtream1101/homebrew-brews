@@ -1,13 +1,12 @@
-# Documentation: http://docs.brew.sh/Formula-Cookbook.html
+# Documentation: https://docs.brew.sh/Formula-Cookbook.html
 #                http://www.rubydoc.info/github/Homebrew/brew/master/Formula
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
 class Itermocil < Formula
-  desc "Create pre-defined window/pane layouts and run commands in iTerm - alternative profile support implementation"
-  homepage "https://github.com/xtream1101/itermocil"
+  desc "Create pre-defined window/pane layouts and run commands in iTerm"
+  homepage ""
   url "https://github.com/xtream1101/itermocil/archive/0.2.1.5.zip"
-  sha256 "68a09466d2f59f4ed041295d5612d173e632d12a8f414ab7936195268fad5536"
-
+  sha256 "aeb05e7fb69348a5c9e2257ccdee8a841485fa167fbffaaeed0f22d31c40e6d7"
 
   # depends_on "cmake" => :build
   resource "PyYAML" do
@@ -16,7 +15,9 @@ class Itermocil < Formula
   end
 
   def install
+    # ENV.deparallelize  # if your formula fails when building in parallel
     ENV.prepend_create_path "PYTHONPATH", libexec/"vendor/lib/python2.7/site-packages"
+
 
     %w[PyYAML].each do |r|
       resource(r).stage do

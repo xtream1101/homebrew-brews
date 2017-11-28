@@ -5,7 +5,7 @@
 class Itermocil < Formula
   desc "Create pre-defined window/pane layouts and run commands in iTerm"
   homepage ""
-  url "https://github.com/xtream1101/itermocil/archive/0.2.1.5.zip"
+  url "https://github.com/xtream1101/itermocil/archive/0.2.2.zip"
   sha256 "aeb05e7fb69348a5c9e2257ccdee8a841485fa167fbffaaeed0f22d31c40e6d7"
 
   # depends_on "cmake" => :build

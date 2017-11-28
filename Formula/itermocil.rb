@@ -5,8 +5,8 @@
 class Itermocil < Formula
   desc "Create pre-defined window/pane layouts and run commands in iTerm"
   homepage ""
-  url "https://github.com/xtream1101/itermocil/archive/0.2.1.6.zip"
-  sha256 "4d42161df6250a136f9d80a5d0f9c71ed49f99a3f2e16505893364c4e0844dc4"
+  url "https://github.com/xtream1101/itermocil/archive/0.2.1.7.zip"
+  sha256 "e8ca7c5c68d4515f88d0ddd760b0263117c85b6e6ff1ff9c900773d13d6d649e"
 
   # depends_on "cmake" => :build
   resource "PyYAML" do
